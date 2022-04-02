@@ -499,7 +499,6 @@ requirements for the degree of \@degree\ in \@majorfielden.
      {\fontfamily{times}\selectfont \small \@campus\\}
     {\fontfamily{times}\selectfont \small \@programen\\}
   \fi
-  {\fontfamily{times}\selectfont \small http://www.ifg.edu.br/formosa\\}
   \vfill
 
     {\normalsize\bfseries{\MakeUppercase{\@title}}}
@@ -543,7 +542,6 @@ requirements for the degree of \@degree\ in \@majorfielden.
   	{\fontfamily{times}\selectfont \small \@campus\\}
   	{\fontfamily{times}\selectfont \small \@programen\\}
   	\fi
-  	{\fontfamily{times}\selectfont \small http://www.ifg.edu.br/formosa\\}
   	\vfill
 	{\large\bfseries{\MakeUppercase{\@title}}}\\
 	\vfill

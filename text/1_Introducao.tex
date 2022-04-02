@@ -1,52 +1,49 @@
 \chapter{Introdução}\label{Introducao}
 
-Este documento serve de exemplo da utilização da classe IFG para escrever um texto cujo objetivo é apresentar os resultados de um trabalho científico. 
-Este modelo foi produzido a partir do modelo de monografia do \href{https://github.com/UnB-CIC/Monografia}{Departamento de Ciência da Computação da UnB}.
+É notório o aumento da preocupação com a segurança nos dias atuais, com as cidades ficando cada vez mais violentas,  buscas por soluções são eminentes. A tecnologia, por sua vez, vem com o intuito de proporcionar a comodidade, segurança e facilidade, com propostas de acesso remoto a dispositivos de automação residencial, que proporcionam ao usuário o controle da sua casa, assim como seus bem, dentro e fora de casa \citep{Wortmeyer2005}.
 
-Na introdução, o autor deve apresentar os fatos e fatores que influenciam o contexto do trabalho.
-Em seguida, o autor deve mostrar seu problema nesse contexto em um último parágrafo.
-Os objetivos devem ser destacados em uma subseção.
-Citações são mais do que uma obrigação, são o reconhecimento e respeito pelo trabalho dos nossos colegas de ciência.
+\citep{Silva2016}, em seu trabalho, expõe a importância de um sistema de automação comercial com o exemplo de controle para retirada de carrinhos de bebês em um shopping de Salvador, onde mostra a ineficiência de um controle manual. Com o sistema desenvolvido, com uso de tecnologias como \acf{RFID}, foi possível ter o controle dos carrinhos retirados, tal como sua localização, caso o mesmo não for devolvido. Podemos verificar que a eficácia da junção do software com hardware para trazer facilidade e praticidade para o meio comercial.
 
-Para citar assim:~\citep{Silva2018graph}, Escreva assim:
+A Embrapa Informática Agropecuária, com intuito de ter o controle dos bens patrimoniais, investiu na tecnologia RFID, uma vez que verificações manuais não são totalmente confiáveis. Juntamente com uma aplicação Web, tornou de mais fácil acesso e controle os bens tal como sua localização. Por meio das tags e/ou etiquetas RFID, é possível identificar unicamente cada bem, assim como sua localização, também tornando possível emissões de relatórios sempre que necessário \citep{Narciso2008}.
 
-\begin{verbatim}
-~\citep{Silva2018graph}
-\end{verbatim}
 
-Para citar assim:~\cite{Silva2018graph}, Escreva assim:
+\section{Justificativa}
 
-\begin{verbatim}
-~\cite{Silva2018graph}
-\end{verbatim}
+Atualmente o controle de acesso aos laboratórios de informática do IFG é realizado de forma manual, para ter acesso aos laboratórios basta preencher manualmente a folha de controle de chaves no \acf{DAA} e retirar a chave. Essa prática permite que pessoas não autorizadas acessem livremente o laboratório, comprometendo a segurança física do ambiente. Levando em consideração o alto valor agregado (computadores, roteadores, switches e outros equipamentos), considera-se que seja importante o desenvolvimento de um sistema que garanta maior segurança no acesso físico desses ambientes.
 
+Sabendo que o RFID é uma tecnologia que captura dados por meio de frequência de rádio, tornando possível a identificação de objetos com dispositivos eletrônicos (tags) e que o Arduíno, juntamente com o ESP-01, podem fazer a leitura destes sinais e envia-los via \acf{WiFi} para uma página Web, tornando possível construir um sistema computacional baseado na Web para efetivo controle de acesso aos laboratórios do IFG utilizando o Arduíno, o ESP-01 e a tecnologia de comunicação RFID.
 
 \section*{Objetivo}
 
-Objetivos normalmente iniciam-se com verbos no infinitivo, por exemplo: 
+\subsection{Objetivo Geral}
 
-Escrever um bom TCC.
+Sistematizar e projetar sistema de controle de acesso Web utilizando RFID e microcontrolador ESP8266 através de estudo bibliográfico.
 
-\subsection*{Objetivos Específicos}
+\subsection{Objetivos Específicos}
 
 \begin{enumerate}
-	\item Fazer AAAA
-	\item Implementar BBBB
-	\item Produzir CCCC
+    \item Estudar conceitos relacionados aos dispositivos embarcados presentes no contexto de IoT, tais como a plataforma de desenvolvimento livre e aberta Arduíno e placas baseadas no microcontrolador ESP8266 (ESP-01);
+	
+	\item Pesquisar sobre eletrônica básica relacionada à montagem de circuitos digitais através de uma \textit{protoboard};
+
+	\item Prototipar o sistema a nível de software através de simulação;
+
+	\item Projetar e construir bancos de dados relacional para cadastro de usuários do futuro sistema;  
+	
+	\item Realizar testagem física dos dispositivos a fim de testar os códigos criados para o Arduíno e o ESP-01.
+
 \end{enumerate}
 
-Alguns cuidados devem ser tomados para melhorar a experiência do leitor.
-O primeiro deles é sempre usar referências cruzadas de siglas, capítulos e seções, figuras e tabelas.
-O nome a seguir: \acf{IFG}, é um exemplo de uso de siglas para ser usado na primeira citação.
-\ac{IFG} é apenas a sigla, após seu primeiro uso.
-Este é um exeplo de nota de rodapé\footnote{\url{https://www.capes.gov.br/images/stories/download/diversos/OrientacoesCapes_CombateAoPlagio.pdf}}.
 
-\section{Descrição Dos Capítulos}
+
+\section{Descrição dos Capítulos}
 
 A última parte da introdução é uma descrição do que o leitor encontrará em cada capítulo.
 Por exemplo, no \nameref{Referencial_Teorico} são apresentados comandos em \LaTeX e dicas para formatar seu TCC.
 No \nameref{Metodo} é descrito o método utilizado para alcançar os objetivos listados aqui.
 O \nameref{Resultados} apresenta os resultados obtidos.
 No \nameref{Conclusao}, são apresentadas as conclusões, contribuições científicas e trabalhos futuros.
+
+
 
 

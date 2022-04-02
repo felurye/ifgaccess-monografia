@@ -1,17 +1,32 @@
 \chapter{Método}
 \label{Metodo}
-\indent
-Este capítulo oferece sugestões para descrever o método.
 
-\section{O que devo escrever aqui?}%
+% Baseado no livro Estudo de Caso de Robert K. Yin
+% https://www.researchgate.net/figure/Figura-2-Processo-de-Estudo-de-Caso-Fonte-Yin-2010_fig5_332767198
+%\section{Plano}
+%\section{Projeto}
+%\section{Preparação}
+%\section{Coleta}
+%\section{Análise}
+%\section{Compatilhamento}
 
-Cada ferramenta, tecnologia, definições e todo o arcabouço teórico do trabalho deve estar em seu \nameref{Referencial_Teorico}.
-Aqui, no \nameref{Metodo} você deve escrever como utilizou as ferramentas, tecnologias e outros recursos para resolver o problema proposto com vistas a alcançar seus objetivos.
-Este não é lugar para definir nada novo.
 
+O projeto em questão baseia-se em uma pesquisa básica descritiva e exploratória com estudo de caso, orientada para a resolução de problemas práticos reais, seu foco é a  situação pontual de empréstimos de chaves do laboratório de informática do IFG - Campus Formosa. Tratando-se de uma pesquisa teórica - revisão bibliográfica com ideias apresentadas de modo sistematizado seguida de um estudo de caso com ferramentas que possibilitam o uso da metodologia de Internet das Coisas. Este consiste em um projeto com desenvolvimento inicial. 
 
-Não caia na tentação de dizer aqui os resultados! Guarde-os para o \nameref{Resultados}. Muitas vezes é interessante começar a escrita, justamente pelo \nameref{Resultados}.
+Segundo \citep{metodolai} um estudo de caso é uma pesquisa: 
 
-\fontshape{n}\selectfont%
-A tabela com a listagem de todas as atividades, pontuação e somatório encontra se na página de finalização do formulário.
+\begin{quoting}
+    que se concentra no estudo de um caso particular, considerado representativo de um conjunto de casos análogos, por ele significativamente representativo. A coleta de dados e sua análise se dão da mesma forma que nas pesquisas de campo, em geral.
+    
+    Os dados devem ser coletados e registrados com o necessário rigor e seguindo todos os procedimentos da pesquisa de campo. Devem ser trabalhados, mediante análise rigorosa, e apresentados em relatórios qualificados.
+\end{quoting}
 
+A pesquisa consiste na coleta de informações a partir de textos, livros, artigos e demais materiais de caráter científico. As técnicas utilizadas foram procedimentos operacionais que servem de mediação prática para realização das pesquisas. Como tais, podem ser utilizadas em pesquisas conduzidas mediante diferentes metodologias e compatíveis com os métodos adotados. As ferramentas descritas abaixo foram utilizadas no processo de desenvolvimento da pesquisa \citep{metodolai}.
+
+Para desenvolver a página Web, a nível de front-end (interface da aplicação), foi utilizado o Bootstrap, um framework Web de código-fonte aberto para desenvolvimento que utiliza HTML \cite{w3c}, CSS \cite{w3c} e JavaScript \cite{w3c} como linguagens \cite{build}. O desenvolvimento do back-end (regra de negócio da aplicação), utilizado para recuperar os dados recebidos pelo front-end, foi desenvolvido através da linguagem de programação PHP \cite{w3c}. 
+
+Os casos de uso do sistema IFGAccess e o aprofundamento de suas funcionalidades foram utilizados para definição do BD. O projeto do BD se iniciou com a construção do Diagrama de Entidade Relacionamento (DER), mostrado na Figura 1, um tipo de fluxograma que explana como “entidades” (pessoas, objetos ou conceitos) se relacionam entre si dentro de um sistema, e a consequente criação do modelo relacional, expresso através de tabelas. As tabelas foram criadas utilizando a linguagem SQL. O BD utilizado foi PostgreSQL, um Sistema Gerenciador de Banco de Dados Objeto Relacional (SGBDOR) \cite{php}.
+
+Protótipos, com ferramentas como o {\textit Tinkercad}, que, através de software, simula sistemas embarcados e circuitos digitais, foram desenvolvidos para testar e validar os códigos. Foram realizados testes de conexão com o ESP8266 - 01 e a captura de informações por meio de sensores. A figura 2 mostra as conexões feitas entre o Arduino e o ESP8266 – 01 para possibilitar o uso dos comandos exibidos na Tabela 1. Os resultados alcançados com a presente pesquisa estão descritos no tópico seguinte.
+
+Escolhidas as ferramentas necessárias para execução da pesquisa, foram executadas as seguintes fases para sua elaboração: 1) Estudo relacionada a programação física (Arduíno e todas as ferramentas relacionas). 2)Prototipação da tela web 3)Criação do DER; 4)  Testes e prototipação do dispositivo físico; 5) Criação da pagina web somente com o cadastro.  Os resultados alcançados com a presente pesquisa estão descritos no tópico seguinte.
